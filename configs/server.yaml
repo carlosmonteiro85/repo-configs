@@ -1,5 +1,5 @@
 datasource:
-  url: jdbc:h2:file:./data/ms-vendas 
+  url: jdbc:mysql://localhost:3306/teste?createDatabaseIfNotExist=true&serverTimezone=UTC
   username: root
   password: root 
 h2:
@@ -9,6 +9,7 @@ h2:
 jpa:
   hibernate:
     ddl-auto: update
+    dialect: org.hibernate.dialect.MySQL8Dialect
 
 #spring:
 #  datasource:
